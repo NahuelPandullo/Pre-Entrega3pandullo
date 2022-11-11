@@ -1,0 +1,181 @@
+@media (max-width: 992px){
+    legend{
+        font-family: 'Oswald', sans-serif;
+        color: $rosa;
+        display: grid;
+        font-size: 200%;
+        background-color: $blanco;
+    
+    }
+nav a{
+    font-weight: 200px;
+    padding-right: 60px;
+}
+.legn{
+    color: $negro;
+}
+.btn_t{
+    height: 270px;
+    width: 380px;
+    background-image: url("../assets/asesoramiento\ personal.webp");
+    background-repeat: no-repeat;
+    color: $negro;
+    font-size: x-large;
+    margin-left: 300px;
+        margin-right: 300px;
+        
+}
+.btn_t2{
+    background-image: url("../assets/tramites.jpg");
+    height: 270px;
+    width: 380px;
+    color: $negro;
+    font-size: x-large;
+    margin-left: 300px;
+        margin-right: 300px;
+}
+.imag{
+    display: none;
+}
+}
+
+@media (max-width: 768px) {
+    header{
+        background-image: linear-gradient(rgb(254, 253, 253), rgb(234, 110, 174));
+        text-align: left;
+        font-size: 20px;}
+    .logo img{
+            height: 87px;
+            width: 130px;
+            }
+    .nav_label{
+            display: none;
+        }
+    .btn_t{
+        height: 270px;
+        width: 380px;
+        background-image: url("../assets/asesoramiento\ personal.webp");
+        background-repeat: no-repeat;
+        color: $negro;
+        font-size: x-large;
+        margin-left: 150px;
+            margin-right: 300px;
+            
+    }
+    .btn_t2{
+        background-image: url("../assets/tramites.jpg");
+        height: 270px;
+        width: 380px;
+        color: $negro;
+        font-size: x-large;
+        margin-left: 150px;
+            margin-right: 300px;
+            
+    }
+        .label{
+            margin-top: 40%;
+        } 
+        .nav__li{
+            position: fixed;
+            bottom: 0;
+            top: 90px;
+            background-color: $negro;
+            width: 100%;
+            left: 0;
+            display:flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            clip-path:circle(0 at center)
+        }
+        .nav__input:checked + .nav__li{
+            clip-path:circle(100% at center);
+            }
+        a{
+            color: $negro;
+            }
+         .legn{
+                color: $rosa;
+            }
+        .nav__li :hover{
+                color:$rosa;}
+        .imag{
+            display: none;
+        }
+        footer{
+            margin-top: 50%;
+        }
+    footer{  background-image: linear-gradient(rgb(254, 253, 253), rgb(234, 110, 174));}
+}
+@media (max-width: 576px) {
+    ul li{
+        text-align: left;
+            font-size: 20px;}
+    .nav__label{  
+         display: block;
+         cursor: pointer;
+        
+            }
+    .nav__li{
+        position: fixed;
+        bottom: 0;
+        top: 90px;
+        background-color:$negro;
+        width: 100%;
+        left: 0;
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path:circle(0 at center)
+        
+    }
+    .nav__li :hover{
+    color: $rosa;
+    }
+    .nav__input:checked + .nav__li{
+    clip-path:circle(100% at center);
+    }
+    
+    ul input{
+    display: grid;
+    grid-auto-flow:column;
+    gap: 3em;
+    }
+    a{
+        color: $negro;
+    }
+    .label{
+        margin-top: 30%;
+    }
+    footer{
+        margin-top: 35%;
+    }
+    legend{
+        font-family: 'Oswald', sans-serif;
+        color:$negro;
+        display:grid;
+        font-size: 200%;
+        }
+    .legn{
+        color: $rosa;
+    }
+    div {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            font-size: 200%;
+            animation-duration: 5s;
+            animation-name: aparecer;
+            background-color: rgba(255, 255, 255, 0.518);
+            }
+            @keyframes aparecer {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+            
+        }
+    
+    }

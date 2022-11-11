@@ -1,0 +1,12 @@
+
+$negro:  black;
+$gris: grey;
+$blanco: white;
+$rosa: rgb(255, 156, 204);
+
+$colors: map-merge(
+    ("legend":$blanco,
+    "enviar": $gris,
+    "header":$negro,
+    "media":$rosa,)
+)

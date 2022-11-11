@@ -1,0 +1,74 @@
+main{
+    .tramites{
+        margin-top: 130%;
+    }
+   
+    div input{
+        cursor: pointer;
+        width: 100px;
+        
+    }
+    label input{
+        display: none;
+    }
+    .enviar{
+        padding:10px 10px;
+        border:none;
+        outline: none;
+        background-color: $negro;
+        color: map-get($map:$colors, $key:"enviar" );
+        cursor:pointer
+    }
+    .enviar:hover{
+        color:$blanco;
+    }
+    legend{
+        font-family: 'Oswald', sans-serif;
+        color: $blanco;
+        display: grid;
+        font-size: 300%;
+       
+        }
+        .label{
+            margin-top: 5%;
+        }
+        div {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            font-size: 300%;
+            animation-duration: 5s;
+            animation-name: aparecer;
+            background-color: rgba(255, 255, 255, 0.518);
+            }
+            @keyframes aparecer {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+            
+        }
+        article div img{
+            border-style:solid;
+            margin-right: 130px;
+            margin-left: 100px;
+            margin-top: 50px;
+                }
+                
+    article div input{
+        margin-top: 5px;
+        margin-left: 250px;
+        margin-right: 300px;
+        padding:10px 10px;
+        border:none;
+        outline: none;
+        background-color: $negro;
+        color: rgb(153, 149, 149);
+        cursor:pointer;
+         
+    }
+    article div input:hover{
+        color:$blanco;
+       }
+}

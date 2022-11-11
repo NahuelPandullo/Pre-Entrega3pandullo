@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://carroscomo.com/wp-content/uploads/2021/04/tramites-y-requisitos-para-comprar-o-sacar-un-auto-1.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: auto;
+  align-items: center;
+  border-style: none;
+  height: 90px;
+}
+body .nav__input, body .nav__label {
+  display: none;
+}
+body nav a {
+  font-weight: 800px;
+  padding-right: 100px;
+  display: flex;
+}
+body a {
+  text-decoration: none;
+  color: white;
+  font-size: 125%;
+  font-family: "Oswald", sans-serif;
+}
+body nav a :hover {
+  color: grey;
+}
+body .nav__li {
+  display: flex;
+  justify-content: space-between;
+}
+body .logo img {
+  height: 95px;
+  width: 150px;
+  background-color: white;
+}
+
+main .tramites {
+  margin-top: 5%;
+}
+main div input {
+  cursor: pointer;
+  width: 100px;
+}
+main label input {
+  display: none;
+}
+main .enviar {
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: rgb(153, 149, 149);
+  cursor: pointer;
+}
+main .enviar:hover {
+  color: white;
+}
+main legend {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  display: grid;
+  font-size: 300%;
+}
+main .label {
+  margin-top: 5%;
+}
+main div {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 300%;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  background-color: rgba(255, 255, 255, 0.518);
+}
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main article div img {
+  border-style: solid;
+  margin-right: 130px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+main article div input {
+  margin-top: 5px;
+  margin-left: 250px;
+  margin-right: 300px;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: rgb(153, 149, 149);
+  cursor: pointer;
+}
+main article div input:hover {
+  color: white;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 70px;
+  align-items: center;
+  padding: 10px;
+  margin-top: 13%;
+}
+footer i {
+  font-size: 50px;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+footer .__footer {
+  margin-top: 6%;
+}
+
+@media (max-width: 992px) {
+  legend {
+    font-family: "Oswald", sans-serif;
+    color: rgb(255, 156, 204);
+    display: grid;
+    font-size: 200%;
+    background-color: white;
+  }
+  nav a {
+    font-weight: 200px;
+    padding-right: 60px;
+  }
+  .legn {
+    color: black;
+  }
+  .btn_t {
+    height: 270px;
+    width: 380px;
+    background-image: url("../assets/asesoramiento personal.webp");
+    background-repeat: no-repeat;
+    color: black;
+    font-size: x-large;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .btn_t2 {
+    background-image: url("../assets/tramites.jpg");
+    height: 270px;
+    width: 380px;
+    color: black;
+    font-size: x-large;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  .imag {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-image: linear-gradient(rgb(254, 253, 253), rgb(234, 110, 174));
+    text-align: left;
+    font-size: 20px;
+  }
+  .logo img {
+    height: 87px;
+    width: 130px;
+  }
+  .nav_label {
+    display: none;
+  }
+  .btn_t {
+    height: 270px;
+    width: 380px;
+    background-image: url("../assets/asesoramiento personal.webp");
+    background-repeat: no-repeat;
+    color: black;
+    font-size: x-large;
+    margin-left: 150px;
+    margin-right: 300px;
+  }
+  .btn_t2 {
+    background-image: url("../assets/tramites.jpg");
+    height: 270px;
+    width: 380px;
+    color: black;
+    font-size: x-large;
+    margin-left: 150px;
+    margin-right: 300px;
+  }
+  .label {
+    margin-top: 40%;
+  }
+  .nav__li {
+    position: fixed;
+    bottom: 0;
+    top: 90px;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+  }
+  .nav__input:checked + .nav__li {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  a {
+    color: black;
+  }
+  .legn {
+    color: rgb(255, 156, 204);
+  }
+  .nav__li :hover {
+    color: rgb(255, 156, 204);
+  }
+  .imag {
+    display: none;
+  }
+  footer {
+    margin-top: 50%;
+  }
+  footer {
+    background-image: linear-gradient(rgb(254, 253, 253), rgb(234, 110, 174));
+  }
+}
+@media (max-width: 576px) {
+  ul li {
+    text-align: left;
+    font-size: 20px;
+  }
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__li {
+    position: fixed;
+    bottom: 0;
+    top: 90px;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+  }
+  .nav__li :hover {
+    color: rgb(255, 156, 204);
+  }
+  .nav__input:checked + .nav__li {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  ul input {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+  }
+  a {
+    color: black;
+  }
+  .label {
+    margin-top: 30%;
+  }
+  footer {
+    margin-top: 35%;
+  }
+  legend {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    display: grid;
+    font-size: 200%;
+  }
+  .legn {
+    color: rgb(255, 156, 204);
+  }
+  div {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 200%;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    background-color: rgba(255, 255, 255, 0.518);
+  }
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}/*# sourceMappingURL=styles.css.map */

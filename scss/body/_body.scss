@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+     background-image: url("https://carroscomo.com/wp-content/uploads/2021/04/tramites-y-requisitos-para-comprar-o-sacar-un-auto-1.jpg");
+     height: 600px;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    
+    header{
+    display: flex;
+    justify-content: space-between;
+    background-color:map-get($map:$colors, $key:"header" );
+    height: auto;
+    align-items: center;
+    border-style: none;
+    height: 90px;
+    }
+    .nav__input, .nav__label{
+    display: none;
+    }
+    nav a{
+    font-weight: 800px;
+    padding-right: 100px;
+     display: flex;}
+    a{
+        text-decoration: none;
+        color: $blanco;
+        font-size: 125%;
+        font-family: 'Oswald', sans-serif;
+         }
+    nav a :hover{
+            color: $gris;
+        }
+    .nav__li{
+            display: flex;
+            justify-content: space-between;
+            }  
+    .logo img{
+                height: 95px;
+                width: 150px;
+                background-color:$blanco;
+               
+                }   
+}
